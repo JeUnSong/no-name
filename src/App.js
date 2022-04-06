@@ -15,7 +15,7 @@ function App() {
         const word = firestore.collection("word");
 
         // collection의 document인 "word_item"을 가져온다.
-        word.doc("higsFKwBDqAnYUrFN9M1").get().then((doc) => {
+        word.doc("fLjUs4O35MVOFq7semm4").get().then((doc) => {
 
           // document의 데이터를 가져옴
           console.log(doc.data());
