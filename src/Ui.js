@@ -5,12 +5,10 @@ import { useEffect } from 'react';
 function Ui () {
 
     const [inputs, setInputs] = useState({
-        items: [],
         text:'',
         korean:'',
         english:'',
         detail:'',
-        show : false
     });
 
     const { text, korean,english, detail } = inputs;
@@ -32,23 +30,7 @@ function Ui () {
         word.doc(korean).set({ 내용:detail , 영어: english});
     }
 
-//     fetch("https://console.firebase.google.com/u/1/project/noname-b9b4d/firestore/data/~2Fword~2F"+text)
-//     .then(res=>res.json())
-//     .then(
-//       (result)=>{
-//         this.setState({
-//           isLoaded: true,
-//           items: result
-//         });
-//       },
-//       (error)=>{
-//         this.setState({
-//           isLoaded:true,
-//           error
-//         });
-//       }
-//     );
-//   }
+
 
 
     // console.log(text)
